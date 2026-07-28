@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* =====================================================
+   LION SCHOOL - HEADER & FOOTER
+   CSS puro
+===================================================== */
+
+:root {
+  --azul-principal: #3a4aa8;
+  --branco: #ffffff;
+  --texto-cinza: #4a4a4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--texto-cinza);
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.site-header {
+  background-color: var(--azul-principal);
+  width: 100%;
+}
+
+.header-container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 14px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo img {
+  height: 48px;
+  display: block;
+}
+
+.btn-sair {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--branco);
+  text-decoration: none;
+  font-size:20px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.btn-sair:hover {
+  opacity: 0.8;
+}
+
+.icon-sair {
+  width: 45px;
+  height: auto;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+.site-footer {
+  background-color: var(--azul-principal);
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 22px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--branco);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.footer-info p:last-child {
+  margin-bottom: 0;
+}
+
+.icon-info {
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.footer-copy {
+  order: 2;
+}
+
+.footer-copy p {
+  color: var(--branco);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer-social {
+  order: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--branco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.footer-social a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.footer-social img {
+  width: 16px;
+  height: auto;
+}
+
+/* =====================================================
+   RESPONSIVO - MOBILE
+===================================================== */
+@media (max-width: 600px) {
+  .header-container {
+    padding: 12px 20px;
+  }
+
+  .header-logo img {
+    height: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .footer-info {
+    order: 1;
+  }
+
+  .footer-social {
+    order: 2;
+  }
+
+  .footer-copy {
+    order: 3;
+  }
+
+  .footer-copy p {
+    font-size: 11px;
+    white-space: normal;
+  }
+}
