@@ -22,7 +22,7 @@ async function apiRequest(endpoint) {
     console.error(`Falha ao buscar ${endpoint}:`, error);
     throw error;
   }
-}
+} 
 
 // ---------- CURSOS ----------
 
